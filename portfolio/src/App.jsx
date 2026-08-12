@@ -1,9 +1,24 @@
+import { Route, Routes } from "react-router-dom"
+import Home from "./pages/Home"
+import Sobre from "./pages/Sobre"
+import Projetos from "./pages/Projetos"
+import Contato from "./pages/Contato"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+
 function App() {
 
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/projetos" element={<Projetos />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
+      <Footer />
+    </>
   )
 }
 
