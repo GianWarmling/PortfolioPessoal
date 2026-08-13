@@ -4,7 +4,6 @@ import Sobre from "./pages/Sobre"
 import Projetos from "./pages/Projetos"
 import Contato from "./pages/Contato"
 import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
 
 function App() {
 
@@ -17,7 +16,6 @@ function App() {
         <Route path="/projetos" element={<Projetos />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
-      <Footer />
     </>
   )
 }

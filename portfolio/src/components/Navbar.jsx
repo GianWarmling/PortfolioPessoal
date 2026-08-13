@@ -1,14 +1,29 @@
 import { Link } from "react-router-dom";
 
 function Navbar() {
-    return ( 
-        <nav>
-            <Link to="/">Home</Link>
-            <Link to="/sobre">Sobre</Link>
-            <Link to="/projetos">Projetos</Link>
-            <Link to="/contato">Contato</Link>
-        </nav>
-     );
+    return (
+        <div className="navbar">
+            <div className="navbar-logo">
+                <a href="/">Gian Warmling</a>
+            </div>
+            <nav>
+                <ul className="links-navbar">
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/sobre">Sobre</Link>
+                    </li>
+                    <li>
+                        <Link to="/projetos">Projetos</Link>
+                    </li>
+                    <li>
+                        <Link to="/contato">Contato</Link>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    );
 }
 
 export default Navbar;
